@@ -52,5 +52,6 @@ public class Item {
     @PrePersist
     public void prePersist() {
         this.active = true;
+        this.availability = true;
     }
 }
