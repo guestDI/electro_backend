@@ -35,17 +35,42 @@ public class DataLoader implements ApplicationRunner {
         manufacturerRepository.save(bosch_manufacturer);
 
 
-        Category drel = new Category("Дрели и шуроповерты");
-        Category vacuum = new Category("Пылесосы");
-        Category jointer = new Category("Рубанки");
-        Category saw = new Category("Пилы и лобзики");
-        Category bolgarka = new Category("Болгарки");
+        Category perforators = new Category("Перфораторы",
+                "https://res.cloudinary.com/dxp2voatn/image/upload/v1559030651/site/categories/perforators.jpg");
+        Category drel = new Category("Шуроповерты",
+                "https://res.cloudinary.com/dxp2voatn/image/upload/v1559030651/site/categories/shur.jpg");
+        Category mixer = new Category("Миксеры");
+        Category vacuum = new Category("Пылесосы",
+                "https://res.cloudinary.com/dxp2voatn/image/upload/v1559031032/site/categories/vacuum.jpg");
+        Category jigsaw = new Category("Лобзики",
+                "https://res.cloudinary.com/dxp2voatn/image/upload/v1559031193/site/categories/lobzik.jpg");
+        Category saw = new Category("Пилы",
+                "https://res.cloudinary.com/dxp2voatn/image/upload/v1559034374/site/categories/pila.jpg");
+        Category bolgarka = new Category("УШМ (Болгарки)",
+                "https://res.cloudinary.com/dxp2voatn/image/upload/v1559031599/site/categories/usm.jpg");
+        Category shtoborez = new Category("Штроборезы",
+                "https://res.cloudinary.com/dxp2voatn/image/upload/v1559031710/site/categories/shtroborez.jpg");
+        Category betonlom = new Category("Бетоноломы");
+        Category measure = new Category("Измерительные приборы");
+        Category tileCutter = new Category("Плиткорезы");
+        Category welding = new Category("Аппарат для сварки труб");
+        Category immersionVibrator = new Category("Глубинный вибратор");
+        Category concreteMixer = new Category("Бетономешалки");
 
+        categoryRepository.save(perforators);
         categoryRepository.save(drel);
         categoryRepository.save(vacuum);
-        categoryRepository.save(jointer);
-        categoryRepository.save(saw);
+        categoryRepository.save(jigsaw);
         categoryRepository.save(bolgarka);
+        categoryRepository.save(shtoborez);
+        categoryRepository.save(saw);
+        categoryRepository.save(tileCutter);
+        categoryRepository.save(measure);
+        categoryRepository.save(mixer);
+        categoryRepository.save(betonlom);
+        categoryRepository.save(welding);
+        categoryRepository.save(immersionVibrator);
+        categoryRepository.save(concreteMixer);
 
 
         Item item = Item.builder()

@@ -22,9 +22,9 @@ public class Category {
     @Column
     private String categoryPhoto;
 
-    public Category(String name, String description) {
+    public Category(String name, String categoryPhoto) {
         this.name = name;
-        this.description = description;
+        this.categoryPhoto = categoryPhoto;
     }
 
     public Category(String name) {
