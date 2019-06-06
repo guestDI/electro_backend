@@ -15,4 +15,10 @@ public class ApplicationService {
     public void saveApplication(Application application){
         applicationRepository.save(application);
     }
+
+    public Iterable<Application> getAll(){
+        return applicationRepository.findAll();
+
+
+    }
 }

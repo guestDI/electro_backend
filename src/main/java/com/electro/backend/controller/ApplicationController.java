@@ -18,4 +18,9 @@ public class ApplicationController {
     public void addApplication(@RequestBody Application application){
         applicationService.saveApplication(application);
     }
+
+    @RequestMapping(value = "/getAllApplications", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public Iterable<Application> findAll() {
+        return applicationService.getAll();
+    }
 }
