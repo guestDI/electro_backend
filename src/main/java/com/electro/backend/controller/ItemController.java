@@ -35,4 +35,9 @@ public class ItemController {
     public Iterable<ItemDto> findItemsByCategory(@PathVariable("id") Long id) {
         return itemService.findAll(id);
     }
+
+    @RequestMapping(value = "/updateItemStatus/{id}/{status}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    public Integer updateItemStatus(@PathVariable("id") Long id, @PathVariable("status") boolean status) {
+        return itemService.updateItemStatus(id, status);
+    }
 }

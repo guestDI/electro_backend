@@ -28,6 +28,8 @@ public class Application {
     private String phone;
     @Column
     private String description;
+    @Column
+    private boolean active;
 //    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/YYYY'T'HH:mm")
 //    @JsonSerialize(using = DateSerializer.class)
 //    @JsonDeserialize(using = DateDeserializers.DateDeserializer.class)
@@ -39,5 +41,10 @@ public class Application {
         this.name = name;
         this.phone = phone;
         this.description = description;
+    }
+
+    @PrePersist
+    public void prePersist() {
+        this.active = true;
     }
 }

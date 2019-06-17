@@ -30,4 +30,8 @@ public class ItemService {
                 .map(itemConverter::convert)
                 .collect(Collectors.toList());
     }
+
+    public Integer updateItemStatus(Long id, boolean status){
+        return itemRepository.updateItemStatus(id, status);
+    }
 }
