@@ -23,4 +23,9 @@ public class ApplicationController {
     public Iterable<Application> findAll() {
         return applicationService.getAll();
     }
+
+    @RequestMapping(value = "/updateApplicationStatus/{id}/{status}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    public Integer updateApplicationStatus(@PathVariable("id") Long id, @PathVariable("status") boolean status) {
+        return applicationService.updateApplicationStatus(id, status);
+    }
 }

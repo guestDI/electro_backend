@@ -18,7 +18,9 @@ public class ApplicationService {
 
     public Iterable<Application> getAll(){
         return applicationRepository.findAll();
+    }
 
-
+    public Integer updateApplicationStatus(Long id, boolean status){
+        return applicationRepository.updateApplicationStatus(id, status);
     }
 }
