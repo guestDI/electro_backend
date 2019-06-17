@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ApplicationRepository extends CrudRepository<Application, Long> {
     @Modifying(clearAutomatically = true)
-    @Query("Update Application app SET app.availability = :status WHERE app.id = :id")
+    @Query("Update Application app SET app.active = :status WHERE app.id = :id")
     Integer updateApplicationStatus(@Param("id") Long itemId, @Param("status") boolean status);
 }
