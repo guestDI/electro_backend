@@ -111,7 +111,7 @@ public class DataLoader implements ApplicationRunner {
                         "Частота вращения (холостой ход): 12 000 об/мин, Резьба шпинделя: M14, Диаметр диска: 125 мм, Вес 1.5 кг")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559564200/site/instruments/bosch_gws_670.jpg")
-                .price(new BigDecimal("30"))
+                .price(new BigDecimal("7"))
                 .build();
 
         Item bosch_gws_22_230 = Item.builder()
@@ -122,7 +122,7 @@ public class DataLoader implements ApplicationRunner {
                         "частота вращения (холостой ход): 0 — 6 500 об/мин, резьба шпинделя: M14, диаметр диска: 230 мм, вес: 5.2 кг")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559564200/site/instruments/bosch_gws_22_230.jpg")
-                .price(new BigDecimal("40"))
+                .price(new BigDecimal("9"))
                 .build();
 
         Item bosch_gst_65 = Item.builder()
@@ -133,7 +133,7 @@ public class DataLoader implements ApplicationRunner {
                         "максимальная глубина пропила (дерево): 65 мм, максимальная глубина пропила (сталь): 8 мм, вес 2.3 кг")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559570504/site/instruments/bosch_gst_65.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(9))
                 .build();
 
         Item bosch_gfz_16_35 = Item.builder()
@@ -145,7 +145,7 @@ public class DataLoader implements ApplicationRunner {
                         "высота: 235 мм, вес: 5.2 кг")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559570612/site/instruments/bosch_gfz_16_35.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(15))
                 .build();
 
         Item bosch_gks_190 = Item.builder()
@@ -157,7 +157,7 @@ public class DataLoader implements ApplicationRunner {
                         "скорость вращения шпинделя: 5 500 об/мин, вес: 4.2 кг")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559571008/site/instruments/bosch_gks_190.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(11))
                 .build();
 
         Item bosch_psr_10_8 = Item.builder()
@@ -170,7 +170,7 @@ public class DataLoader implements ApplicationRunner {
                         "металл: 8 мм, максимальный диаметр сверления, дерево: 20 мм")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559571365/site/instruments/bosch_psr_10_8.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(6))
                 .build();
 
         Item bosch_gbh_2_26_dre = Item.builder()
@@ -183,7 +183,7 @@ public class DataLoader implements ApplicationRunner {
                         "максимальный диаметр сверления, металл: 13 мм, максимальный диаметр сверления, дерево: 30 мм")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559571837/site/instruments/bosch_gbh_2_26_dre.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(7))
                 .build();
 
         Item md1_11e = Item.builder()
@@ -193,7 +193,7 @@ public class DataLoader implements ApplicationRunner {
                 .description("Дрель-миксер. Мощность: 1100 Вт, 1 скорость")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559594873/site/instruments/md1_11e.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(6))
                 .build();
 
         Item skil_1608_la = Item.builder()
@@ -203,7 +203,7 @@ public class DataLoader implements ApplicationRunner {
                 .description("Дрель-миксер. Мощность: 850 Вт, 1 скорость")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559595046/site/instruments/skil_1608_la.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(6))
                 .build();
 
         Item bosch_gnf_35 = Item.builder()
@@ -215,7 +215,7 @@ public class DataLoader implements ApplicationRunner {
                         "диаметр диска: 150 мм, вес: 4.7 кг")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559595265/site/instruments/bosch_gnf_35.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(15))
                 .build();
 
         Item bosch_gsh_16_30 = Item.builder()
@@ -225,7 +225,7 @@ public class DataLoader implements ApplicationRunner {
                 .description("Отбойный молоток. Электрический, мощность: 1750 Вт, удар 41 Дж, частота 1300 об/мин, вес: 16.5 кг")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559595733/site/instruments/bosch_gsh_16_30.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(25))
                 .build();
 
         Item bosch_gsh_5_ce = Item.builder()
@@ -236,7 +236,7 @@ public class DataLoader implements ApplicationRunner {
                         "частота 2900 об/мин, вес: 6.2 кг")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559595921/site/instruments/bosch_gsh_5_ce.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(10))
                 .build();
 
         Item bosch_gas_55_m_afc = Item.builder()
@@ -248,7 +248,7 @@ public class DataLoader implements ApplicationRunner {
                         " объём пылесборника: 43 л (контейнер для сбора воды - 40 л)")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559596198/site/instruments/bosch_gas_55_m_afc.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(13))
                 .build();
 
         Item bosch_gll_2_10 = Item.builder()
@@ -258,7 +258,7 @@ public class DataLoader implements ApplicationRunner {
                 .description("Лазерный нивелир. Призменный, дальность: 10 м, точность: 3 мм, компенсатор: ±4°, корпус IP54")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559596740/site/instruments/bosch_gll_2_10.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(8))
                 .build();
 
         Item solaris_pw_1501 = Item.builder()
@@ -269,7 +269,7 @@ public class DataLoader implements ApplicationRunner {
                         "с тефлоновым покрытием, насадки 20 мм/25 мм/32 мм/40 мм/50 мм/63 мм, труборез, кейс")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559597091/site/instruments/solaris_pw_1501.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(5))
                 .build();
 
         Item yato_yt_3708 = Item.builder()
@@ -279,7 +279,7 @@ public class DataLoader implements ApplicationRunner {
                 .description("Ручной плиткорез. Ручной, глубина реза: 16 мм")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559597409/site/instruments/yato_yt_3708.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(10))
                 .build();
 
         Item vi_1_17_3 = Item.builder()
@@ -291,7 +291,7 @@ public class DataLoader implements ApplicationRunner {
                         "длина (мм): 350, ширина (мм): 180, высота (мм): 270, вес (кг): 25")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559597601/site/instruments/vi_1_17_3.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(12))
                 .build();
 
         Item skiper_c_60_honda = Item.builder()
@@ -303,7 +303,7 @@ public class DataLoader implements ApplicationRunner {
                         "скорость движения: 25 м/мин, рабочий объём двигателя: 163 см3, емкость топливного бака: 3.1 л, расход топлива: 1.4 л/ч")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559631838/site/instruments/skiper_c_60_honda.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(23))
                 .build();
 
         Item makita_DPC7331 = Item.builder()
@@ -313,7 +313,7 @@ public class DataLoader implements ApplicationRunner {
                 .description("Бензорез. 4.2 кВт, диск: 350 мм, глубина реза: 122 мм, 9.7 ")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559632446/site/instruments/makita_DPC7331.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(22))
                 .build();
 
         Item eco_cma_200 = Item.builder()
@@ -324,7 +324,7 @@ public class DataLoader implements ApplicationRunner {
                         "число оборотов (об/мин): 26, объем (л): 200, длина (мм): 870, ширина (мм): 710, высота (мм): 510, вес (кг): 52")
                 .quantity(1)
                 .itemPhoto("https://res.cloudinary.com/dxp2voatn/image/upload/v1559632741/site/instruments/eco_cma_200.jpg")
-                .price(new BigDecimal(20))
+                .price(new BigDecimal(13))
                 .build();
 
         itemRepository.save(bosch_gws_670);

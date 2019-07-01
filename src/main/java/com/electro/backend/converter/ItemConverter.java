@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ItemConverter {
     public ItemDto convert(Item item) {
-        return new ItemDto(item.getId(), item.getName(), item.getDescription(), item.getItemPhoto(), item.getQuantity(),
+        return new ItemDto(item.getId(), item.getName(), item.getDescription(), item.getItemPhoto(), item.getPrice(), item.getQuantity(),
                 item.isAvailability(), item.isActive());
     }
 }
