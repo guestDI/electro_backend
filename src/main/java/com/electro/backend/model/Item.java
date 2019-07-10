@@ -54,4 +54,10 @@ public class Item {
         this.active = true;
         this.availability = true;
     }
+
+    public Item(String name, String desc, BigDecimal price) {
+        this.name = name;
+        this.description = desc;
+        this.price = price;
+    }
 }

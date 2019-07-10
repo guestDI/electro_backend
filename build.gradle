@@ -4,6 +4,8 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'application'
+mainClassName = 'com.electro.backend.BackendApplication'
 
 group = 'com.electro'
 version = '0.0.1-SNAPSHOT'
@@ -28,4 +30,13 @@ dependencies {
     runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                'Main-Class': 'com.electro.backend.BackendApplication'
+        )
+    }
 }

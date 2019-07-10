@@ -3,9 +3,11 @@ package com.electro.backend;
 import com.electro.backend.model.Category;
 import com.electro.backend.model.Item;
 import com.electro.backend.model.Manufacturer;
+import com.electro.backend.model.User;
 import com.electro.backend.repository.CategoryRepository;
 import com.electro.backend.repository.ItemRepository;
 import com.electro.backend.repository.ManufacturerRepository;
+import com.electro.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -28,8 +30,18 @@ public class DataLoader implements ApplicationRunner {
     @Autowired
     private ItemRepository itemRepository;
 
+    @Autowired
+    private UserRepository userRepository;
+
     @Override
     public void run(ApplicationArguments applicationArguments) throws Exception {
+        User adminUser = User.builder()
+                .username("administrator")
+                .password("admin_lestat")
+                .build();
+
+        userRepository.save(adminUser);
+
         Manufacturer bosch_manufacturer = new Manufacturer("Bosch", "Германия",
                 "Роберт Бош ГМБХ. Германия, 70839 Герлинген-Счиллерхохе, Роберт-Бош-Платц, 1");
 
